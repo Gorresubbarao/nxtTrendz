@@ -20,17 +20,16 @@ const CartSummary = () => (
           </h1>
           <p className="cart-items-count">{cartList.length} Items in cart</p>
           <Popup
-              modal
-              trigger={
-                <button className="checkout-btn" type="button">
-                  Checkout
-                </button>
-              }
-              position="top left"
-            >
-              {close => <Payment close={close} />}
-            </Popup>
-          
+            modal
+            trigger={
+              <button className="checkout-btn" type="button">
+                Checkout
+              </button>
+            }
+            position="top left"
+          >
+            {close => <Payment close={close} />}
+          </Popup>
         </div>
       )
     }}
